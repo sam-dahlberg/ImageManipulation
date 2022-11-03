@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>model.Sepia</OriginalElement>
+  <nodes>
+    <node x="0.0" y="1004.0">model.Pixel</node>
+    <node x="764.0" y="903.0">model.Blur</node>
+    <node x="0.0" y="0.0">model.LayerModel</node>
+    <node x="573.0" y="903.0">model.Sharpen</node>
+    <node x="980.0" y="775.0">model.SimpleImageProcessingModel</node>
+    <node x="382.0" y="903.0">model.TestFilter</node>
+    <node x="989.0" y="669.0">model.ImageProcessingModel</node>
+    <node x="274.0" y="216.0">model.Image</node>
+    <node x="535.3181818181818" y="786.0">model.FilteringOperations</node>
+    <node x="0.0" y="903.0">model.Sepia</node>
+    <node x="190.99999999999997" y="903.0">model.Greyscale</node>
+    <node x="0.0" y="326.0">model.SimpleLayerModel</node>
+    <node x="48.81818181818181" y="775.0">model.ColorOperations</node>
+    <node x="301.5" y="0.0">model.ImageInterface</node>
+    <node x="555.0" y="172.0">model.CheckerboardImageCreationModel</node>
+    <node x="586.5" y="0.0">model.ImageCreationModel</node>
+    <node x="312.3636363636363" y="669.0">model.Operations</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="model.ColorOperations" target="model.Operations" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="172.3181818181818" y="750.0" />
+      <point x="389.3636363636363" y="750.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="model.SimpleLayerModel" target="model.LayerModel" relationship="REALIZATION">
+      <point x="0.0" y="-149.0" />
+      <point x="0.0" y="138.0" />
+    </edge>
+    <edge source="model.Image" target="model.ImageInterface" relationship="REALIZATION">
+      <point x="0.0" y="-94.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="model.Sepia" target="model.ColorOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="85.5" y="878.0" />
+      <point x="172.3181818181818" y="878.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="model.SimpleImageProcessingModel" target="model.ImageProcessingModel" relationship="REALIZATION">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="model.FilteringOperations" target="model.Operations" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="649.8181818181818" y="750.0" />
+      <point x="389.3636363636363" y="750.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="model.Blur" target="model.FilteringOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="849.5" y="878.0" />
+      <point x="649.8181818181818" y="878.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="model.CheckerboardImageCreationModel" target="model.ImageCreationModel" relationship="REALIZATION">
+      <point x="0.0" y="-61.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="model.Greyscale" target="model.ColorOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="276.5" y="878.0" />
+      <point x="172.3181818181818" y="878.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="model.Sharpen" target="model.FilteringOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="658.5" y="878.0" />
+      <point x="649.8181818181818" y="878.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="model.TestFilter" target="model.FilteringOperations" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="467.5" y="878.0" />
+      <point x="649.8181818181818" y="878.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="696.0" y="332.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

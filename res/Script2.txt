@@ -1,0 +1,11 @@
+create-layer first
+load cuteCat.png
+create-layer second
+load funnyCat.jpeg
+current first
+greyscale
+save-all catLayersChanged.jpeg
+load-all catLayersChanged.txt
+current second
+sepia
+save funnyCat-sepia.png

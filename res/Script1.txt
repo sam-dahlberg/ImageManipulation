@@ -1,0 +1,15 @@
+create-layer first
+create-layer second
+current first
+load funnyCat.jpeg #load it in layer first
+sharpen
+save funnyCat-sharpen.png
+current second #make another layer, this is topmost and visible
+load cuteCat.png #load it in layer second
+blur
+save cuteCat-blur-greyscale.ppm #save second layer because it is topmost visible
+invisible second #make second layer (topmost) invisible
+blur
+blur
+sepia
+save funnyCat-blur2-sepia.jpeg #save first layer because it is the topmost visible
